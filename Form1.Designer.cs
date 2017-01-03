@@ -44,10 +44,10 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.database1DataSet3 = new Tamas02.Database1DataSet3();
             this.szamlakFejeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet3 = new Tamas02.Database1DataSet3();
             this.szamlakFejeTableAdapter = new Tamas02.Database1DataSet3TableAdapters.SzamlakFejeTableAdapter();
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ErdetiSzamlaSzama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.szamlaDatumaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rogzitesDatumaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.szamlaKiallitojaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,8 +56,8 @@
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.szamlakFejeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -175,7 +175,7 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn,
+            this.ErdetiSzamlaSzama,
             this.szamlaDatumaDataGridViewTextBoxColumn,
             this.rogzitesDatumaDataGridViewTextBoxColumn,
             this.szamlaKiallitojaDataGridViewTextBoxColumn,
@@ -186,26 +186,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(802, 268);
             this.dataGridView1.TabIndex = 3;
             // 
-            // database1DataSet3
-            // 
-            this.database1DataSet3.DataSetName = "Database1DataSet3";
-            this.database1DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // szamlakFejeBindingSource
             // 
             this.szamlakFejeBindingSource.DataMember = "SzamlakFeje";
             this.szamlakFejeBindingSource.DataSource = this.database1DataSet3;
             // 
+            // database1DataSet3
+            // 
+            this.database1DataSet3.DataSetName = "Database1DataSet3";
+            this.database1DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // szamlakFejeTableAdapter
             // 
             this.szamlakFejeTableAdapter.ClearBeforeFill = true;
             // 
-            // erdetiSzamlaSzamaDataGridViewTextBoxColumn
+            // ErdetiSzamlaSzama
             // 
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn.DataPropertyName = "Erdeti számla száma";
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn.HeaderText = "ErdetiSzamlaSzama";
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn.Name = "erdetiSzamlaSzamaDataGridViewTextBoxColumn";
-            this.erdetiSzamlaSzamaDataGridViewTextBoxColumn.Width = 150;
+            this.ErdetiSzamlaSzama.DataPropertyName = "ErdetiSzamlaSzama";
+            this.ErdetiSzamlaSzama.HeaderText = "ErdetiSzamlaSzama";
+            this.ErdetiSzamlaSzama.Name = "ErdetiSzamlaSzama";
+            this.ErdetiSzamlaSzama.Width = 150;
             // 
             // szamlaDatumaDataGridViewTextBoxColumn
             // 
@@ -259,8 +259,8 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.szamlakFejeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,6 +286,7 @@
         private System.Windows.Forms.BindingSource szamlakFejeBindingSource;
         private Database1DataSet3TableAdapters.SzamlakFejeTableAdapter szamlakFejeTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn erdetiSzamlaSzamaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ErdetiSzamlaSzama;
         private System.Windows.Forms.DataGridViewTextBoxColumn szamlaDatumaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rogzitesDatumaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn szamlaKiallitojaDataGridViewTextBoxColumn;
